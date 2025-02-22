@@ -3,7 +3,8 @@ package advancejava;
 import java.util.List;
 
 public class StreamAPI {
-	List<Integer> num;
+	List<Integer> evenNum,oddNum;
+	
 
 	public static void main(String[] args) {
 		StreamAPI start=new StreamAPI();
@@ -13,8 +14,9 @@ public class StreamAPI {
 	
 	public void add(int number) {
 		for(int i=1;i<=number;i++) {
-			if(i%2==0) 
-			{num.add(i);}
+			if(i%2==0) {evenNum.add(i);}
+					
+			else {oddNum.add(i);}
 			
 		}
 	}
